@@ -182,7 +182,7 @@ module.exports = AddItem;
 
 The next component we're going to build is our List component. Our List component is going to be our unordered list of every item in our todo list. Rememeber, the component which is managing the state of our list is ListComponent's parent component (ListContainer). From our ListContainer component we'll pass in the todolist as props to our List component. Our CSS will be entirely contained as an object in this component. Let's go ahead and add that now.
 
-* Head over to  yuor ```List.js``` file.
+* Head over to  your ```List.js``` file.
 * Create a ```render``` method. Inside that render method go ahead and add this object as a variable inside of ```render```.
 ```javascvript
 var styles = {
