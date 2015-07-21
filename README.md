@@ -76,7 +76,7 @@ Before we start building our app, let's head over to our App.js file and create 
 * Create a component that all it does is render "Hello World!" to the page and save that into a variable called ```App```
 * Now, use ```React.render``` to render your ```<App />``` component to the app element in your index.html page.
 * Head over to your terminal and tell webpack to build and watch your files using ```webpack -w```.
-* Open up your ```index.html``` in the broowser and verify that you see ```Hello World!``` and you're getting no errors in the console.
+* Open up your ```index.html``` in the browser and verify that you see ```Hello World!``` and you're getting no errors in the console.
 
 If you are getting errors, debug. If you get stuck, flag down a mentor.
 
@@ -125,7 +125,7 @@ We're going to start out with our most child components and work our way back ou
 * First thing, as always, is require('react'). **From here on out that step will be assumed**
 * Create your AddItem component with ```React.createClass``` and then export it using ```module.exports = AddItem;``` so that we can require our AddItem component from other files later on.
 
-The purpose of this component is it's going to keep track of its own state which is going to be just the input box value. Whenever someone types in a new value into this input box and hits enter, ```AddItem``` will invoke a method that will be passed to it from its parent component (as props) and we'll pass that method the current state of the component (or the new item we wan to add).
+The purpose of this component is it's going to keep track of its own state which is going to be just the input box value. Whenever someone types in a new value into this input box and hits enter, ```AddItem``` will invoke a method that will be passed to it from its parent component (as props) and we'll pass that method the current state of the component (or the new item we want to add).
 
 * use ```getInitialState``` to set an initial state of your component with a ```newItem``` property whose value is an empty string
 * Create a ```handleChange``` method that is going to use ```setState``` to update ```newItem``` with whatever is in the input box
